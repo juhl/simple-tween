@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="Author" content="Ju-Hyung Lee, jufoot@gmail.com">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Simple Tweening Test</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Simple Tweening Test</h1>
+    </header>
+
+    <div id="content">
+      <div id="screen">
+        <canvas width="800" height="480" id="canvas"></canvas>        
+      </div>
+      <div id="toolbar">        
+        Method:
+        <div class="combo">          
+          <select name="Method" onchange="App.onchanged_method(this.selectedIndex);">
+            <option selected>Linear
+            <option>Quadratic
+            <option>Cubic
+            <option>Quartic
+            <option>Quintic
+            <option>Sinusoidal
+            <option>Exponential
+            <option>Circular
+            <option>Elastic
+            <option>Back
+          </select>
+          <select name="Method" onchange="App.onchanged_easing(this.selectedIndex);">
+            <option selected>Ease-In
+            <option>Ease-Out
+            <option>Ease-In-Out
+            <option>Ease-Out-In
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="simple-tween.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript">App.main();</script>
+</body>
+</html>
