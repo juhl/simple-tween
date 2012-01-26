@@ -3,17 +3,6 @@ var EASE_OUT = 1;
 var EASE_IN_OUT = 2;
 var EASE_OUT_IN = 3;
 
-var TWEEN_LINEAR = 0;
-var TWEEN_QUADRATIC = 1;
-var TWEEN_CUBIC = 2;
-var TWEEN_QUARTIC = 3;
-var TWEEN_QUINTIC = 4;
-var TWEEN_SINUSOIDAL = 5;
-var TWEEN_EXPONENTIAL = 6;
-var TWEEN_CIRCULAR = 7;
-var TWEEN_ELASTIC = 8;
-var TWEEN_BACK = 9;
-
 tweenLinear = function(a, b, t) {
 	return a + (b - a) * t;
 }
@@ -59,7 +48,7 @@ tweenBack = function(a, b, t) {
 	return a + (b - a) * t * t * (e * t + t - e);
 }
 
-function tween(method, easing, a, b, t) {
+function tween(func, easing, a, b, t) {
 	if (easing == EASE_OUT || (easing == EASE_IN_OUT && t > 0.5) || (easing == EASE_OUT_IN && t < 0.5)) {
 		var temp = a;
 		a = b;
@@ -78,18 +67,5 @@ function tween(method, easing, a, b, t) {
 		}
 	}
 
-	switch (method) {
-		case 0: return tweenLinear(a, b, t);
-		case 1: return tweenQuadratic(a, b, t);
-		case 2: return tweenCubic(a, b, t);
-		case 3: return tweenQuartic(a, b, t);
-		case 4: return tweenQuintic(a, b, t);
-		case 5: return tweenSinusoidal(a, b, t);
-		case 6: return tweenExponential(a, b, t);
-		case 7: return tweenCircular(a, b, t);
-		case 8: return tweenElastic(a, b, t);
-		case 9: return tweenBack(a, b, t);
-	}
-
-	return a;
+	return func(a, b, t);
 }
