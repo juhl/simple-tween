@@ -46,7 +46,7 @@ div#toolbar .slider {
   vertical-align: middle;
   display: inline-block;
 }
-div#comments {
+div#comments, div#like {
   width: 800px; 
   margin: 0px auto;
 }
