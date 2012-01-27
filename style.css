@@ -39,6 +39,10 @@ div#disqus_wrapper {
   width: 800px; 
   margin: 0 auto; 
   font-size: 80%;
+  background-color: "#888";
+  -webkit-border-radius: .4em;
+  -moz-border-radius: .4em;
+  border-radius: .4em;
 }
 header {
   padding-top: 0px;
