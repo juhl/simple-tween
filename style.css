@@ -35,15 +35,9 @@ div#toolbar .slider {
   vertical-align: middle;
   display: inline-block;
 }
-div#disqus_wrapper {
-  width: 780px; 
-  margin: 30px auto;
-  padding: 10px;
-  font-size: 70%;
-  background-color: #eee;
-  -webkit-border-radius: .4em;
-  -moz-border-radius: .4em;
-  border-radius: .4em;
+div#comments {
+  width: 800px; 
+  margin: 0px auto;
 }
 header {
   padding-top: 0px;
