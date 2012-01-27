@@ -5,6 +5,16 @@ html, body {
 }
 header {
   font-family: Lucida Grande, Verdana, sans-serif;  
+  padding-top: 0px;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 0.1em 0.1em 0.3em gray
+}
+footer {
+  padding-top: 0px;
+  text-align: center;
+  line-height: 1.5;
+  color: #404040;
 }
 div#content {
   margin: 0px auto;
@@ -20,7 +30,8 @@ div#screen {
   background-color: white;
 }
 div#toolbar {
-  padding-top: 4px;
+  padding: 10px;
+  font-size: 80%;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
@@ -38,16 +49,4 @@ div#toolbar .slider {
 div#comments {
   width: 800px; 
   margin: 0px auto;
-}
-header {
-  padding-top: 0px;
-  text-align: center;
-  line-height: 1.5;
-  text-shadow: 0.1em 0.1em 0.3em gray
-}
-footer {
-  padding-top: 0px;
-  text-align: center;
-  line-height: 1.5;
-  color: #404040;
 }
