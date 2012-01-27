@@ -1,7 +1,10 @@
 html, body {
   margin:0px 0px; padding:0px;
-  font-family: Lucida Grande, Verdana, sans-serif;
+  font-family: Verdana, times new roman, NanumGothic, sans-serif;
   text-align: center;
+}
+header {
+  font-family: Lucida Grande, Verdana, sans-serif;  
 }
 div#content {
   margin: 0px auto;
@@ -31,6 +34,11 @@ div#toolbar .slider {
   text-align: center;
   vertical-align: middle;
   display: inline-block;
+}
+div#disqus_wrapper {
+  width: 800px; 
+  margin: 0 auto; 
+  font-size: 80%;
 }
 header {
   padding-top: 0px;
