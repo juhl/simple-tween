@@ -37,9 +37,10 @@ div#toolbar .slider {
 }
 div#disqus_wrapper {
   width: 800px; 
-  margin: 0 auto; 
+  margin: 8px auto;
+  padding: 10px;
   font-size: 80%;
-  background-color: "#404040";
+  background-color: #eee;
   -webkit-border-radius: .4em;
   -moz-border-radius: .4em;
   border-radius: .4em;
