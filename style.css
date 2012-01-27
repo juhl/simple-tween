@@ -36,10 +36,10 @@ div#toolbar .slider {
   display: inline-block;
 }
 div#disqus_wrapper {
-  width: 800px; 
-  margin: 8px auto;
+  width: 780px; 
+  margin: 30px auto;
   padding: 10px;
-  font-size: 80%;
+  font-size: 70%;
   background-color: #eee;
   -webkit-border-radius: .4em;
   -moz-border-radius: .4em;
