@@ -57,8 +57,14 @@ div#toolbar .slider {
   vertical-align: middle;
   display: inline-block;
 }
-div#comments, div#like {
-  padding: 4px;
-  width: 800px; 
+div#share {  
+  padding: 4px;  
   margin: 0px auto;
+  margin-top: 5px;
+  width: 800px;
+}
+div#comments {
+  padding: 4px;  
+  margin: 0px auto;
+  width: 800px;
 }
