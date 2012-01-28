@@ -67,6 +67,7 @@ App = function() {
             case 7: func = tweenCircular; break;
             case 8: func = tweenElastic; break;
             case 9: func = tweenBack; break;
+            case 10: func = tweenBounce; break;
         }
         updateScreen();
     }

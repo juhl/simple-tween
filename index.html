@@ -17,7 +17,7 @@
     <div id="content">
       <div id="screen">
         <canvas width="800" height="480" id="canvas"></canvas>        
-      </div>
+      </div>      
       <div id="toolbar">        
         Method:
         <div class="combo">          
@@ -32,6 +32,7 @@
             <option>Circular
             <option>Elastic
             <option>Back
+            <option>Bounce
           </select>
           <select name="Method" onchange="App.onchanged_easing(this.selectedIndex);">
             <option selected>Ease-In
@@ -40,6 +41,9 @@
             <option>Ease-Out-In
           </select>
         </div>
+      </div>
+      <div id="info">
+        <b>Simple Tween</b> is tiny tween library written in javascript. There is 41 kinds of easing function provided by.
       </div>
       <div id="like">
         <div id="fb-root"></div>

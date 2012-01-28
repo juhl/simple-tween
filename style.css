@@ -16,6 +16,17 @@ footer {
   line-height: 1.5;
   color: #404040;
 }
+div#info {
+  margin: 0px auto;
+  padding: 4px;
+  width: 800px;
+  font-size: 80%;
+  text-align: left;
+  background-color: #eeeeee;
+  -webkit-border-radius: .4em;
+  -moz-border-radius: .4em;
+  border-radius: .4em;
+}
 div#content {
   margin: 0px auto;
   text-align: center;

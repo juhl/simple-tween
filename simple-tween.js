@@ -48,6 +48,21 @@ tweenBack = function(a, b, t) {
 	return a + (b - a) * t * t * (e * t + t - e);
 }
 
+tweenBounce = function(a, b, t) {
+	if (t < (1/2.75)) {
+		return a + (b - a) * (7.5625 * t * t);
+	} 
+	else if (t < (2/2.75)) {
+		return a + (b - a) * (7.5625 * (t-=(1.5/2.75)) * t + 0.75);
+	} 
+	else if (t < (2.5/2.75)) {
+		return a + (b - a) * (7.5625 * (t-=(2.25/2.75)) * t + 0.9375);
+	} 
+	else {
+		return a + (b - a) * (7.5625 * (t-=(2.625/2.75)) * t + 0.984375);
+	}
+}
+
 function tween(func, easing, a, b, t) {
 	if (easing == EASE_OUT || (easing == EASE_IN_OUT && t > 0.5) || (easing == EASE_OUT_IN && t < 0.5)) {
 		var temp = a;
